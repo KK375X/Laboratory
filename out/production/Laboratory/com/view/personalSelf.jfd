@@ -1,0 +1,87 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundlePackage": "com.view"
+	"i18n.bundleName": "Test"
+	"i18n.keyPrefix": "personalSelf"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq {space :p:99:p, comp textPanel:::p::p}, seq l {space :p:249:p, comp buttonPanel:::p::p}}, space ::99:x}}"
+			"$verticalGroup": "par l {seq l {space :p:40:p, comp textPanel:::::x, space :p:38:p, comp buttonPanel:::p::p, space :p:24:p}}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {comp update:::p:100:p, space ::92:x, comp cancel:::p:100:p, space :::p}}"
+				"$verticalGroup": "par l {seq {space :::p, par b {comp update::b:::x, comp cancel::b:::x}}}"
+				"honorsVisibility": false
+			} ) {
+				name: "buttonPanel"
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "update"
+					"text": new FormMessage( null, "personalSelf.update.text" )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "cancel"
+					"text": new FormMessage( null, "personalSelf.cancel.text" )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {space :0:98:x, par l {seq {comp password:::p:100:p, space s:::p, comp passwordField:::p:260:p}, seq {comp userNo:::p:100:p, space s:::p, comp userNoField:::p:260:p}, seq {comp userName:::p:100:p, space s:::p, comp userNameField:::p:260:p}, seq {comp sex:::p:100:p, space s:::p, comp sexField:::p:260:p}, seq {comp position:::p:100:p, space s:::p, comp positionField:::p:260:p}, seq {comp phone:::p:100:p, space s:::p, comp phoneField:::p:260:p}}, space :0:114:x}}"
+				"$verticalGroup": "par l {seq {space :0:0:x, par l {seq t {par b {comp userNoField::b:p:40:p, comp userNo::b:p:40:p}, space :p:20:p, par b {comp userName::b:p:40:p, comp userNameField::b:p:40:p}, space :p:20:p, par b {comp sex::b:p:40:p, comp sexField::b:p:40:p}, space :p:20:p, comp position:::p:40:p}, comp positionField::t:p:40:p}, space :p:20:p, par b {comp phoneField::b:p:40:p, comp phone::b:p:40:p}, space ::35:x, par b {comp passwordField::b:p:40:p, comp password::b:p:40:p}, space :::p}}"
+				"honorsVisibility": false
+			} ) {
+				name: "textPanel"
+				"border": new javax.swing.border.TitledBorder( "i18nKey=personalSelf.textPanel.border" )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "userNo"
+					"text": new FormMessage( null, "personalSelf.userNo.text" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "userName"
+					"text": new FormMessage( null, "personalSelf.userName.text" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "sex"
+					"text": new FormMessage( null, "personalSelf.sex.text" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "position"
+					"text": new FormMessage( null, "personalSelf.position.text" )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "userNoField"
+					"editable": false
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "userNameField"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "sexField"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "positionField"
+					"editable": false
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "phone"
+					"text": new FormMessage( null, "personalSelf.phone.text" )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "phoneField"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "passwordField"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "password"
+					"text": new FormMessage( null, "personalSelf.password.text" )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 800, 570 )
+		} )
+	}
+}

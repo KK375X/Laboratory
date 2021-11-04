@@ -1,0 +1,102 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundlePackage": "com.view"
+	"i18n.bundleName": "Test"
+	"i18n.keyPrefix": "User_List"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "dialogPane"
+				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq t {space ::127:x, par t:::p {seq {comp laboratoryNameText:::::x, space u:::p, comp laboratoryNameField:::p:310:p, space s:::p, comp search:::p:100:p}, comp scrollPane1::l::600:x, comp panel1::t:::x}, space :p:127:p}, seq l {space :p:230:p, comp update:::p:100:p, space :p:160:p, comp cancel:::p:100:p, space ::264:x}}"
+					"$verticalGroup": "par l {seq l {space :p:20:p, par b {comp search::b:p:36:p, comp laboratoryNameField::b:p:36:p, comp laboratoryNameText::b:p:36:p}, space :p:20:p, comp scrollPane1:::p:270:p, space s:::p, comp panel1:::p::p, space u:::p, par l {comp cancel:::p:40:p, comp update::l:p:40:p}, space ::60:x}}"
+				} ) {
+					name: "contentPanel"
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane1"
+						add( new FormComponent( "javax.swing.JTable" ) {
+							name: "table"
+							"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+								add( "实验室编号" )
+								add( "实验室名称" )
+								add( "实验室地址" )
+							}, new java.util.Vector {
+								add( null )
+								add( null )
+								add( null )
+							}, new java.util.Vector {
+								add( false )
+								add( false )
+								add( false )
+							}, new java.util.Vector {
+								add( null )
+								add( null )
+								add( null )
+							} )
+						} )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "laboratoryNameText"
+						"text": new FormMessage( null, "User_List.laboratoryNameText.text" )
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "laboratoryNameField"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "search"
+						"text": new FormMessage( null, "User_List.search.text" )
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq l {space :p:122:p, par t:::p {comp address::::101:x, comp laboratoryNo::t::101:x, comp laboratoryName::l::101:x}, space :p:36:p, par l {comp laboratoryNameField_2:::p:200:p, comp laboratoryNoField:::p:200:p, comp addressField:::p:200:p}}}"
+						"$verticalGroup": "par l {seq l {space :p:14:p, par b {comp laboratoryNo::b:p:30:p, comp laboratoryNoField::b:p:30:p}, space :p:33:p, par b {comp laboratoryName::b:p:30:p, comp laboratoryNameField_2::b:p:30:p}, space ::37:x, par b {comp address::b:p:30:p, comp addressField::b:p:30:p}, space :p:25:p}}"
+					} ) {
+						name: "panel1"
+						"border": new javax.swing.border.TitledBorder( null, "i18nKey=User_List.panel1.border_3", 4, 0, new java.awt.Font( "黑体", 0, 24 ), new java.awt.Color( 0, 118, 23, 255 ) )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "laboratoryName"
+							"text": new FormMessage( null, "User_List.laboratoryName.text" )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "address"
+							"text": new FormMessage( null, "User_List.address.text" )
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "laboratoryNameField_2"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "addressField"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "laboratoryNo"
+							"text": new FormMessage( null, "User_List.laboratoryNo.text" )
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "laboratoryNoField"
+							"editable": false
+						} )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "update"
+						"text": new FormMessage( null, "User_List.update.text_3" )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "cancel"
+						"text": new FormMessage( null, "User_List.cancel.text_3" )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 880, 770 )
+		} )
+	}
+}

@@ -1,0 +1,70 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundlePackage": "com.view"
+	"i18n.bundleName": "Test"
+	"i18n.keyPrefix": "Use_List"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq {space :p:174:p, comp userNoText:::p:142:p, space u:::p, comp userNoField:::p:316:p, space :p:107:p, comp search:::p:100:p}, seq l {space :p:74:p, comp scrollPane:::p:850:p}}, space ::74:x}, seq l {space :p:257:p, comp delete:::p:100:p, space ::290:x, comp cancel:::p:100:p, space :p:251:p}}"
+			"$verticalGroup": "par l {seq l {space :p:20:p, par b {comp search::b:p:40:p, comp userNoField::b:p:40:p, comp userNoText::b:p:40:p}, space s:::p, comp scrollPane:::p:480:p, space ::36:x, par b {comp delete::b:p:40:p, comp cancel::b:p:40:p}, space :p:33:p}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "userNoText"
+				"text": new FormMessage( null, "Use_List.userNoText.text" )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "userNoField"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "search"
+				"text": new FormMessage( null, "Use_List.search.text" )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "table"
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+						add( "工号" )
+						add( "设备编号" )
+						add( "使用日期" )
+						add( "使用开始时间" )
+						add( "使用结束时间" )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					} )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "delete"
+				"text": new FormMessage( null, "Use_List.delete.text" )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "cancel"
+				"text": new FormMessage( null, "Use_List.cancel.text" )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 1000, 700 )
+		} )
+	}
+}

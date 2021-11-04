@@ -1,0 +1,136 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundlePackage": "com.view"
+	"i18n.bundleName": "Test"
+	"i18n.keyPrefix": "User_List"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "dialogPane"
+				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq t {space ::68:x, par t:::p {seq l {space :p:40:p, comp userName:::p:132:p, space :::p, comp userNameField:::p:310:p, space :p:35:p, comp search:::p:100:p}, comp scrollPane1::l:::x, comp panel1::t:::x}, space :p:127:p}, seq l {space :p:230:p, comp update:::p:100:p, space :p:160:p, comp cancel:::p:100:p, space ::264:x}}"
+					"$verticalGroup": "par l {seq l {space :p:20:p, par b {comp userName::b:p:36:p, comp userNameField::b:p:36:p, comp search::b:p:36:p}, space :p:20:p, comp scrollPane1:::p:270:p, space s:::p, comp panel1:::p::p, space :p:42:p, par l {comp cancel:::p:40:p, comp update::l:p:40:p}, space ::39:x}}"
+				} ) {
+					name: "contentPanel"
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane1"
+						add( new FormComponent( "javax.swing.JTable" ) {
+							name: "table"
+							"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+								add( "工号" )
+								add( "姓名" )
+								add( "性别" )
+								add( "职位" )
+								add( "联系方式" )
+								add( "密码" )
+							}, new java.util.Vector {
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+							}, new java.util.Vector {
+								add( false )
+								add( false )
+								add( false )
+								add( false )
+								add( false )
+								add( false )
+							}, new java.util.Vector {
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+							} )
+						} )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "userName"
+						"text": new FormMessage( null, "User_List.userName.text" )
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "userNameField"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "search"
+						"text": new FormMessage( null, "User_List.search.text" )
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq l {space :p:20:p, par l:::p {comp userNo::l::100:x, comp sex::l::100:x, comp phone::l::100:x}, space :::p, par l {comp sexField:::::x, comp phoneField::l:::x, seq l {comp userNoField:::p:200:p, space :0:0:x}}, space :p:18:p, par t:::p {comp password::::80:x, comp position::t::80:x, comp userName_2::t::80:x}, space :::p, par l {comp userNameField_2::l:p:200:p, comp positionField:::p:200:p, comp passwordField:::p:200:p}, space :0:19:x}}"
+						"$verticalGroup": "par l {seq l {space :p:15:p, par b {comp userNo::b:p:30:p, comp userNoField::b:p:30:p, comp userName_2::b:p:30:p, comp userNameField_2::b:p:30:p}, space :p:25:p, par b {comp sex::b:p:30:p, comp sexField::b:p:30:p, comp position::b:p:30:p, comp positionField::b:p:30:p}, space :p:25:p, par b {comp phone::b:p:40:p, comp phoneField::b:p:30:p, comp password::b:p:30:p, comp passwordField::b:p:30:p}, space ::26:x}}"
+					} ) {
+						name: "panel1"
+						"border": new javax.swing.border.TitledBorder( null, "i18nKey=User_List.panel1.border_3", 4, 0, new java.awt.Font( "黑体", 0, 24 ), new java.awt.Color( 0, 118, 23, 255 ) )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "userNo"
+							"text": new FormMessage( null, "User_List.userNo.text" )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "userName_2"
+							"text": new FormMessage( null, "User_List.userName_2.text" )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "sex"
+							"text": new FormMessage( null, "User_List.sex.text" )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "position"
+							"text": new FormMessage( null, "User_List.position.text" )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "phone"
+							"text": new FormMessage( null, "User_List.phone.text" )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "password"
+							"text": new FormMessage( null, "User_List.password.text" )
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "userNoField"
+							"editable": false
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "userNameField_2"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "sexField"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "positionField"
+							"editable": false
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "phoneField"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "passwordField"
+						} )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "update"
+						"text": new FormMessage( null, "User_List.update.text_3" )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "cancel"
+						"text": new FormMessage( null, "User_List.cancel.text_3" )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 880, 770 )
+		} )
+	}
+}
